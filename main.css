@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Jangkuy";
+  src: url("./Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+}
+
+@font-face{
+  font-family: Poppins;
+  src: url('./fonts/Poppins-Bold.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --green_light: #6aaa99;
+  --green_dark: #44706f;
+  --gray: #b4c7c7;
+  --black: black;
+  --white: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--gray);
+}
+
+h3,
+h4,
+p,
+a {
+  font-family: "Poppins";
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--green_dark);
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Jangkuy";
+  color: var(--green_dark);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.button {
+  padding: 10px 40px;
+  text-align: center;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+.button-shadow {
+  background: var(--green_dark);
+  color: var(--white);
+  box-shadow: 4px 4px 0 var(--green_light);
+}
+
+
+
+
+.button-shop {
+  padding: 10px 40px;
+  text-align: center;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+
+.button-shop:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+.button-shop-shadow {
+  color: var(--white);
+  background: var(--green_dark);
+  box-shadow: 4px 4px 0 var(--gray);
+}
+
+.navigation_menu {
+  width: 90vw;
+  margin: auto;
+  top: 0%;
+  right: 0%;
+  position: relative;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation_menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+.navigation_menu li a {
+  text-decoration: none;
+}
+
+.navigation_menu li:hover a {
+  color: var(--green_light);
+}
+
+.navigation_menu h1 a {
+  font-size: 1.2em;
+  font-family: Jangkuy;
+}
+
+.landingPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 90vh;
+  background: var(--gray);
+  position: relative;
+}
+
+.landingPage_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landingPage_center h1{
+  font-size: 3em;
+}
+
+.landingPage_center h2{
+  font-size: 2em;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+}
+
+.landingPage_image {
+  position: absolute;
+  bottom: -10%;
+}
+
+.landingPage_image img {
+  width: 100vw;
+  height: 40vh;
+}
+
+.productsPage {
+  position: relative;
+  background: var(--green_light);
+}
+
+.productsPage_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+.productsPage_header h1{
+    color: var(--white);
+}
+
+.productsPage_header p{
+  color: var(--white);
+  width: 50vw;
+  text-align: center;
+}
+
+.flower-power{
+  position: absolute;
+  height: 40vh;
+  right: -8vw;
+  top: 10vh;
+}
+
+.productPage_products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productPage_products-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPage_products-product:last-child{
+  padding-bottom: 5vh;
+}
+
+.detailsPage {
+  height: 100vh;
+  background: var(--gray);
+}
+
+.detailsPage_header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+.detailsPage_header h1{
+  font-size: 2em;
+}
+
+.detailsPage_header h2{
+  font-size: 1em;
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+}
+
+.detailsPage_section1{
+  width: 40vw;
+}
+
+.detailsPage_section1 img{
+  height: 20vh;
+}
+
+.detailsPage_section2{
+  width: 40vw;
+}
+
+.detailsPage_section2 img{
+  height: 50vh;
+}
+
+
+@media (max-width: 1024px) {
+  h3,
+  h4,
+  p,
+  a {
+    font-family: "Poppins";
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--green_dark);
+  }
+  
+  h1, h2 {
+    font-family: "Jangkuy";
+    color: var(--green_dark);
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .landingPage_center h1{
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .landingPage_center h2{
+    font-size: 1em;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+  }
+}
