@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Jangkuy";
+  src: url("./Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+}
+
+:root {
+  --green_light: #6aaa99;
+  --green_dark: #44706f;
+  --gray: #b4c7c7;
+  --black: black;
+  --white: white;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  font-family: "Jangkuy";
+  color: var(--green_dark);
+}
+
+body{
+  height: 100vh;
+  background: #b4c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 2em;
+}
