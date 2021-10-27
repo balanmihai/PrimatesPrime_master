@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --green_light: #6aaa99;
+  --green_dark: #44706f;
+  --gray: #b4c7c7;
+  --black: black;
+  --white: white;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Jangkuy";
+  src: url("../Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+}
+
+@font-face {
+  font-family: PopRegular;
+  src: url("../Fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: PopMediumItalic;
+  src: url("../fonts/Poppins-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: PopBold;
+  src: url("../Fonts/Poppins-Bold.ttf");
+}
+
+body {
+  font-family: PopRegular;
+  background: var(--green_light) !important;
+}
+
+h3,
+h4,
+p,
+a {
+  font-family: PopBold;
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--green_dark);
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Jangkuy";
+  color: var(--green_dark);
+}
+
+h1 a:hover{
+  color: var(--white);
+}
+
+.navigation_menu {
+  z-index: 2;
+  width: 90vw;
+  margin: auto;
+  top: 0%;
+  right: 0%;
+  position: relative;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.navigation_menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+.navigation_menu li a {
+  text-decoration: none;
+}
+
+.navigation_menu li:hover a {
+  color: var(--white);
+}
+
+.navigation_menu h1 a {
+  font-size: 1.2em;
+  font-family: Jangkuy;
+}
+
+.ecwid div,
+.ecwid span,
+.ecwid a,
+.ecwid p {
+  font-family: PopRegular !important;
+  color: var(--white) !important;
+}
+
+.ec-size .ec-store__category-page .ec-store__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.ec-size .ec-store__category-page .ec-grid {
+  order: 2;
+}
+.ec-size .ec-store__category-page .ec-pager {
+  order: 3;
+}
+.ec-size .ec-store__category-page .ec-footer {
+  order: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+
+.header h1{
+  font-family: Jangkuy;
+    color: var(--white);
+}
+
+.header p{
+  color: var(--white);
+  width: 50vw;
+  text-align: center;
+}
+
+
+

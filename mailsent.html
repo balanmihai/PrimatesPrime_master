@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mailsent"           
+  content="Your message has been sent!">
+  <link rel="stylesheet" href="mailsent.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="dist/magic-mouse.css" rel="stylesheet" />
+  <title>Message Sent</title>
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><h3 class="left">back home</h3></a>
+    <img class="logo inverted" src="./logo.png" alt="">
+    <h3 class="right">Mihai Bălan</h3>
+  </header>
+
+<div class="container" data-aos="fade-up"
+data-aos-duration="2000">
+  
+  <img class="center-img" src="images/surprise.PNG" alt="">
+  <h1>THANK YOU!</h1>
+  <h3>Your message has been successfully sent!</h3>
+</div>
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="dist/magic_mouse.js"></script>
+<script>
+  document.onkeypress = function (e){
+    e = e || window.event;
+    if(e.keyCode === 13){
+      document.documentElement.classList.toggle('dark-mode');
+
+      document.querySelectorAll('.inverted').forEach((result) => {
+        result.classList.toggle('invert');
+      })
+    }
+  }
+</script>
+
+</body>
+</html>
