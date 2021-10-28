@@ -17,25 +17,21 @@
 
 @font-face {
   font-family: "Jangkuy";
-  src: url("../Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+  src: url("./../fonts/JANGKUY-RegularExpanded.otf") format("otf");
 }
 
 @font-face {
-  font-family: PopRegular;
-  src: url("../Fonts/Poppins-Regular.ttf");
-}
-@font-face {
-  font-family: PopMediumItalic;
-  src: url("../fonts/Poppins-MediumItalic.ttf");
+  font-family: "PopRegular";
+  src: url("./../fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-  font-family: PopBold;
-  src: url("../Fonts/Poppins-Bold.ttf");
+  font-family: "PopBold";
+  src: url("./../fonts/Poppins-Bold.ttf");
 }
 
 body {
-  font-family: PopRegular;
+  font-family: "PopRegular";
   background: var(--green_light) !important;
 }
 
@@ -43,7 +39,7 @@ h3,
 h4,
 p,
 a {
-  font-family: PopBold;
+  font-family: "PopBold";
   text-decoration: none;
   font-size: 1em;
   color: var(--green_dark);
@@ -59,43 +55,45 @@ h1 a:hover{
   color: var(--white);
 }
 
-.navigation_menu {
-  z-index: 2;
-  width: 90vw;
-  margin: auto;
-  top: 0%;
-  right: 0%;
-  position: relative;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-
-
-.navigation_menu li {
-  list-style: none;
-  margin: 0 10px;
-}
-.navigation_menu li a {
-  text-decoration: none;
-}
-
-.navigation_menu li:hover a {
+.navbar-brand{
+  font-size: 1.5em;
+  font-family: Jangkuy;
   color: var(--white);
 }
 
-.navigation_menu h1 a {
-  font-size: 1.2em;
-  font-family: Jangkuy;
+.navbar-brand:hover{
+  color: var(--green_light);
+}
+
+
+.navbar{
+  height: 7vh;
+  z-index: 2;
+  background: var(--green_dark);
+  margin-bottom: 5vh;
+}
+
+.navbar li a{
+  color: var(--white);
+}
+.navbar li a:hover{
+  color: var(--green_light);
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important;
 }
 
 .ecwid div,
 .ecwid span,
 .ecwid a,
 .ecwid p {
-  font-family: PopRegular !important;
+  font-family: "PopRegular" !important;
   color: var(--white) !important;
 }
 
@@ -122,7 +120,7 @@ h1 a:hover{
 }
 
 .header h1{
-  font-family: Jangkuy;
+  font-family: "Jangkuy";
     color: var(--white);
 }
 
@@ -132,5 +130,24 @@ h1 a:hover{
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  h3,
+  h4,
+  p,
+  a {
+    font-family: "PopBold" !important;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--green_dark);
+  }
+  
+  h1, h2 {
+    font-family: "Jangkuy";
+    color: var(--green_dark);
+  }
 
+  .navigation_menu h1 a {
+    display: none;
+  }
+}
 

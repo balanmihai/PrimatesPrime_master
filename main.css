@@ -54,7 +54,7 @@ h1, h2 {
 
 a:hover {
   text-decoration: none;
-  color: var(--white);
+  color: var(--green_light) !important;
 }
 
 .button {
@@ -75,9 +75,6 @@ a:hover {
   box-shadow: 4px 4px 0 var(--green_light);
 }
 
-
-
-
 .button-shop {
   padding: 10px 40px;
   text-align: center;
@@ -96,33 +93,38 @@ a:hover {
   box-shadow: 4px 4px 0 var(--gray);
 }
 
-.navigation_menu {
-  z-index: 2;
-  width: 90vw;
-  margin: auto;
-  top: 0%;
-  right: 0%;
-  position: relative;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.navigation_menu li {
-  list-style: none;
-  margin: 0 10px;
-}
-.navigation_menu li a {
-  text-decoration: none;
-}
-
-.navigation_menu h1 a {
-  font-size: 1.2em;
+.navbar-brand{
+  font-size: 1.5em;
   font-family: Jangkuy;
+  color: var(--white);
 }
+
+.navbar-brand:hover{
+  color: var(--green_light);
+}
+
+
+.navbar{
+  height: 7vh;
+  z-index: 2;
+  background: var(--green_dark);
+}
+
+.navbar li a{
+  color: var(--white);
+}
+.navbar li a:hover{
+  color: var(--green_light);
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.navbar-collapse{
+  flex-grow: 0 !important;
+}
+
 
 #myVideo {
   position: absolute;
@@ -138,12 +140,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin: auto;
-  height: 90vh;
+  height: 93vh;
   background: var(--gray);
   position: relative;
 }
 
 .landingPage_footer{
+
   background: rgb(167, 103, 216);
   display: flex;
   justify-content: center;
@@ -196,7 +199,7 @@ a:hover {
 }
 
 .productPage_header h1{
-    color: var(--white);
+  color: var(--white);
 }
 
 .productPage_header p{
@@ -387,6 +390,8 @@ a:hover {
 
 
 @media (max-width: 1024px) {
+
+  
   h3,
   h4,
   p,
@@ -402,10 +407,11 @@ a:hover {
     color: var(--green_dark);
   }
 
-  .navigation_menu h1 a {
-    display: none;
+  .navbar-brand{
+    font-size: 2em;
+    font-family: "Jangkuy" !important;
+    color: var(--white);
   }
-
 
   .landingPage_center h1{
     font-size: 2em;
@@ -443,14 +449,43 @@ a:hover {
     padding: 5vh 0vh;
     border: var(--black) 2px solid;
   }
+  
 
   .detailsPage_section1 p{
+    margin-top: 5vh;
     text-align: right;
-    width: 40vw;
+    width: 80vw;
   }
 
   .detailsPage_section3 p{
     text-align: right;
-    width: 40vw;
+    width: 80vw;
+    margin-bottom: 5vh;
   }
+
+  .detailsPage_section2-img1{
+    height: 50vh;
+    margin-bottom: 5vh;
+  }
+  
+  .detailsPage_section2-img2{
+    height: 50vh;
+  }
+  
+  .detailsPage_section4-img1{
+    height: 50vh;
+    margin-bottom: 5vh;
+  }
+  
+  .detailsPage_section4-img2{
+    height: 50vh;
+  }
+
+  .detailsPage{
+    overflow-x: hidden;
+  }
+  .productPage{
+    overflow-x: hidden;
+  }
+
 }
