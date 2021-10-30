@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Jangkuy";
+  src: url("./Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+}
+
+@font-face{
+  font-family: "Poppins";
+  src: url('./Fonts/Poppins-Bold.ttf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,24 +25,9 @@
   display: none;
 }
 
-@font-face {
-  font-family: "Jangkuy";
-  src: url("./../fonts/JANGKUY-RegularExpanded.otf") format("otf");
-}
-
-@font-face {
-  font-family: "PopRegular";
-  src: url("./../fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: "PopBold";
-  src: url("./../fonts/Poppins-Bold.ttf");
-}
 
 body {
-  font-family: "PopRegular";
-  background: var(--green_light) !important;
+  background: var(--white) !important;
 }
 
 h3,
@@ -58,7 +53,7 @@ h1 a:hover{
 
 .navbar-brand{
   font-size: 1.5em;
-  font-family: Jangkuy;
+  font-family: "Jangkuy";
   color: var(--white);
 }
 
@@ -93,8 +88,8 @@ h1 a:hover{
 .ecwid span,
 .ecwid a,
 .ecwid p {
-  font-family: "PopRegular" !important;
-  color: var(--white) !important;
+  font-family: "Poppins" !important;
+  color: var(--green_dark) !important;
 }
 
 .ec-size .ec-store__category-page .ec-store__content-wrapper {
@@ -135,7 +130,7 @@ h1 a:hover{
   h4,
   p,
   a {
-    font-family: "PopBold" !important;
+    font-family: "Poppins" !important;
     text-decoration: none;
     font-size: 1em;
     color: var(--green_dark);
