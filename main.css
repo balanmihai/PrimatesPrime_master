@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Jangkuy";
-  src: url("./Fonts/JANGKUY-RegularExpanded.otf") format("otf");
+  src: url("./Fonts/JANGKUY-RegularExpanded.otf");
 }
 
 @font-face{
@@ -379,12 +379,20 @@ a:hover {
 
 
 
-.footer{
+.footer-prm{
   background: rgb(167, 103, 216);
+  height: 15vh;
+  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
+}
+p{
+  margin: 0% !important;
+}
+
+.flower-footer{
+  height: 10vh;
 }
 
 
