@@ -4,7 +4,7 @@
 }
 
 @font-face{
-  font-family: Poppins;
+  font-family: "Poppins";
   src: url('./Fonts/Poppins-Bold.ttf');
 }
 
@@ -16,6 +16,7 @@
 }
 
 :root {
+  --violet:rgb(175, 120, 216);
   --green_light: #6aaa99;
   --green_dark: #44706f;
   --gray: #b4c7c7;
@@ -95,7 +96,7 @@ a:hover {
 
 .navbar-brand{
   font-size: 1.5em;
-  font-family: Jangkuy;
+  font-family: "Jangkuy";
   color: var(--white);
 }
 
@@ -145,9 +146,14 @@ a:hover {
   position: relative;
 }
 
+.caruselul-prm{
+  width: 100vw;
+}
+
+
 .landingPage_footer{
 
-  background: rgb(167, 103, 216);
+  background: var(--violet);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,6 +164,7 @@ a:hover {
 }
 
 .landingPage_center {
+  position: absolute;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -166,10 +173,12 @@ a:hover {
 }
 
 .landingPage_center h1{
+  color: var(--white);
   font-size: 3em;
 }
 
 .landingPage_center h2{
+  color: var(--white);
   font-size: 2em;
   margin-bottom: 5vh;
   margin-top: 1vh;
@@ -216,7 +225,7 @@ display: none;
 .ecwid span,
 .ecwid a,
 .ecwid p {
-  font-family: Poppins !important;
+  font-family: "Poppins" !important;
   color: var(--white) !important;
 }
 
@@ -290,7 +299,7 @@ display: none;
   width: 30vw;
 }
 .productPage_section2 p{
-  margin-top: 2vh;
+  padding-top: 2vh;
   width: 26vw;
 }
 
@@ -377,7 +386,13 @@ display: none;
   height: 90vh;
 }
 
+.contact-left{
+  text-align: left;
+}
 
+.contact-left a{
+  padding-left: 1vw;
+}
 
 
 
@@ -388,6 +403,10 @@ display: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.footer-prm p{
+  color: var(--gray);
 }
 p{
   margin: 0% !important;
@@ -411,6 +430,23 @@ p{
     font-size: 1em;
     color: var(--green_dark);
   }
+
+  .footer-prm{
+    background: rgb(167, 103, 216);
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .flower-footer{
+    padding: 1vh 0vh;
+  }
+
+  .contact-left{
+    display: none;
+  }
+
+
   
   h1, h2 {
     font-family: "Jangkuy";
@@ -418,9 +454,15 @@ p{
   }
 
   .navbar-brand{
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Jangkuy" !important;
     color: var(--white);
+  }
+
+  .caruselul-prm{ display: none;}
+
+  .detailsPage_section3 img{
+    display: none;
   }
 
   .landingPage_center h1{

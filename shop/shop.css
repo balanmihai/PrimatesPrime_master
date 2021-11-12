@@ -27,7 +27,7 @@
 
 
 body {
-  background: var(--white) !important;
+  background: var(--green_light) !important;
 }
 
 h3,
@@ -37,13 +37,13 @@ a {
   font-family: "Poppins";
   text-decoration: none;
   font-size: 1em;
-  color: var(--green_dark);
+  color: var(--white);
 }
 
 h1, h2 {
   text-align: center;
   font-family: "Jangkuy";
-  color: var(--green_dark);
+  color: var(--white);
 }
 
 h1 a:hover{
@@ -58,7 +58,7 @@ h1 a:hover{
 }
 
 .navbar-brand:hover{
-  color: var(--green_light);
+  color: var(--white);
 }
 
 
@@ -89,7 +89,7 @@ h1 a:hover{
 .ecwid a,
 .ecwid p {
   font-family: "Poppins" !important;
-  color: var(--green_dark) !important;
+  color: var(--white) !important;
 }
 
 .ec-size .ec-store__category-page .ec-store__content-wrapper {
@@ -125,20 +125,24 @@ h1 a:hover{
   text-align: center;
 }
 
+.contact-left p a{
+  color: var(--white);
+}
+
 @media (max-width: 1024px) {
   h3,
   h4,
   p,
   a {
-    font-family: "Poppins" !important;
+    font-family: "Poppins";
     text-decoration: none;
     font-size: 1em;
-    color: var(--green_dark);
+    color: var(--white);
   }
   
   h1, h2 {
     font-family: "Jangkuy";
-    color: var(--green_dark);
+    color: var(--white);
   }
 
   .navigation_menu h1 a {
